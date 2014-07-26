@@ -29,16 +29,16 @@ BOARD_HAVE_NFC := true
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/quincyatt/ramdisk/initlogo.rle:root/initlogo.rle
+    device/samsung/quincytmo/ramdisk/initlogo.rle:root/initlogo.rle
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from quincyatt device
-$(call inherit-product, device/samsung/quincyatt/device.mk)
+# Inherit from quincytmo device
+$(call inherit-product, device/samsung/quincytmo/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_quincyatt
-PRODUCT_DEVICE := quincyatt
+PRODUCT_NAME := full_quincytmo
+PRODUCT_DEVICE := quincytmo
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SAMSUNG-SGH-I717
+PRODUCT_MODEL := SAMSUNG-SGH-T879
