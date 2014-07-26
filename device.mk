@@ -15,20 +15,20 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/quincyatt/quincyatt-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/quincytmo/quincytmo-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/quincyatt/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/quincytmo/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/quincyatt/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc
+    device/samsung/quincytmo/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc
 
 # BT firmware
 PRODUCT_COPY_FILES += \
-    device/samsung/quincyatt/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
+    device/samsung/quincytmo/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
 # Inherit from quincy-common
 $(call inherit-product, device/samsung/quincy-common/quincy-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/quincyatt/quincyatt-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/quincytmo/quincytmo-vendor.mk)
