@@ -24,19 +24,19 @@
 -include device/samsung/quincy-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/quincyatt/BoardConfigVendor.mk
+-include vendor/samsung/quincytmo/BoardConfigVendor.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-I717,quincyatt
+TARGET_OTA_ASSERT_DEVICE := SGH-T879,quincytmo
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogenmod_quincyatt_defconfig
+TARGET_KERNEL_CONFIG        := cyanogenmod_quincytmo_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 
 # Assert minimum baseband version
-TARGET_BOARD_INFO_FILE ?= device/samsung/quincyatt/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/samsung/quincytmo/board-info.txt
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00A00000
@@ -45,6 +45,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 536870912
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 536870912
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/quincyatt/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/quincytmo/bluetooth
 
 
